@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple responsive image gallery with image preview and navigation.">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <h1>My Gallery</h1>
+        <p>View Me!</p>
+    </header>
+    <main class="gallery" id="gallery" aria-label="Image gallery">
+    </main>
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="close-button" id="closeButton" type="button" aria-label="Close image preview">&times;</button>
+        <button class="nav-button previous-button" id="previousButton" type="button" aria-label="Previous image">&#10094;</button>
+        <figure class="preview">
+            <img id="previewImage" src="" alt="">
+            <figcaption id="imageCaption"></figcaption>
+        </figure>
+        <button class="nav-button next-button" id="nextButton" type="button" aria-label="Next image">&#10095;</button>
+    </div>
+    <footer>
+        <p>© Made by Vivek Kumar Maurya.</p>
+    </footer>
+</body>
+</html>
