@@ -122,14 +122,12 @@ closeButton.addEventListener("click", closePreview);
 previousButton.addEventListener("click", showPrevious);
 nextButton.addEventListener("click", showNext);
 
-// Close when the dark background is clicked, but not when the image or buttons are used.
 lightbox.addEventListener("click", (event) => {
     if (event.target === lightbox) {
         closePreview();
     }
 });
 
-// Keyboard controls: Escape closes; arrow keys change the image.
 document.addEventListener("keydown", (event) => {
     if (!lightbox.classList.contains("is-open")) {
         return;
